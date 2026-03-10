@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camere - LagoBeatB&B</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>Le nostre camere</h1>
+  <p>Scopri le 55 camere del LagoBeatB&B, arredate con cura per il tuo comfort.</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="camere.html">Camere</a></li>
+    <li><a href="servizi.html">Servizi</a></li>
+    <li><a href="contatti.html">Contatti</a></li>
+  </ul>
+</nav>
+
+<section>
+  <p>Tipologie disponibili:</p>
+  <ul>
+    <li>Singole</li>
+    <li>Doppie</li>
+    <li>Family room</li>
+  </ul>
+  <p>Ogni camera è dotata di bagno privato, Wi-Fi gratuito e vista sul Lago di Garda.</p>
+</section>
+
+<a href="contatti.html" class="btn">Prenota ora</a>
+
+<footer>
+  <p>Contatti: info@lagobeatbb.com | Telefono: +39 123 456789</p>
+</footer>
+
+</body>
+</html>
