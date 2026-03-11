@@ -1,6 +1,4 @@
-/* style.css - LagoBeatB&B */
-
-/* RESET DI BASE */
+/* RESET BASE */
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +6,6 @@
   font-family: Arial, sans-serif;
 }
 
-/* BODY */
 body {
   line-height: 1.6;
   color: #333;
@@ -166,37 +163,53 @@ header .btn:hover {
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
-/* SEZIONE CAMERE */
-#camere {
-  padding: 80px 20px;
-  text-align: center;
+/* MINI-GALLERY CAMERE E ATTIVITÀ */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
 }
 
-#camere h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #004080;
-}
-
-#camere p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-}
-
-#camere .btn {
-  background-color: #ff6600;
-  color: white;
-  font-weight: bold;
-  padding: 12px 30px;
-  font-size: 1.2rem;
+.room, .activity {
+  width: 250px;
+  background: white;
   border-radius: 8px;
-  text-decoration: none;
-  transition: background 0.3s, transform 0.3s;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+  cursor: pointer;
 }
 
-#camere .btn:hover {
-  background-color: #e65c00;
+.room:hover, .activity:hover {
   transform: scale(1.05);
+}
+
+.room img, .activity img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.room h3, .activity h3 {
+  padding: 10px;
+  color: #004080;
+  font-size: 1.1rem;
+}
+
+.room p {
+  padding: 0 10px 15px 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.galleria-camere h2, .galleria-attivita h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #004080;
+  margin-top: 50px;
 }
 
 /* FOOTER */
@@ -232,5 +245,13 @@ footer p {
 
   #camere h2 {
     font-size: 2rem;
+  }
+
+  .room, .activity {
+    width: 200px;
+  }
+
+  .room img, .activity img {
+    height: 150px;
   }
 }
