@@ -22,13 +22,31 @@
   </ul>
 </nav>
 
-<section>
-  <p>Tipologie disponibili:</p>
-  <ul>
-    <li>Singole</li>
-    <li>Doppie</li>
-    <li>Family room</li>
-  </ul>
+<section class="camere">
+  <h2>Le nostre camere</h2>
+
+  <div class="gallery">
+
+    <div class="room">
+      <img src="images/camera1.jpg" alt="Camera matrimoniale LagoBeat">
+      <h3>Camera Matrimoniale</h3>
+      <p>Comfort e vista lago per un soggiorno rilassante.</p>
+    </div>
+
+    <div class="room">
+      <img src="images/camera2.jpg" alt="Camera doppia LagoBeat">
+      <h3>Camera Doppia</h3>
+      <p>Perfetta per amici o coppie in vacanza.</p>
+    </div>
+
+    <div class="room">
+      <img src="images/camera3.jpg" alt="Family Room LagoBeat">
+      <h3>Family Room</h3>
+      <p>Spaziosa e ideale per famiglie.</p>
+    </div>
+
+  </div>
+</section>
   <p>Ogni camera è dotata di bagno privato, Wi-Fi gratuito e vista sul Lago di Garda.</p>
 </section>
 
