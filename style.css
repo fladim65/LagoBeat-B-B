@@ -206,3 +206,33 @@ footer {
     gap: 10px;
   }
 }
+.galleria {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.activity {
+  width: 250px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.activity img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.activity h3 {
+  padding: 15px;
+  color: #004080;
+}
