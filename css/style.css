@@ -1,1 +1,123 @@
+body{
+font-family: Arial, sans-serif;
+margin:0;
+padding:0;
+text-align:center;
+background:#f4f4f4;
+}
 
+/* MENU */
+
+nav{
+background:#333;
+padding:15px;
+}
+
+nav ul{
+list-style:none;
+margin:0;
+padding:0;
+display:flex;
+justify-content:center;
+gap:30px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* HERO */
+
+header{
+background-image:url("../images/lago.jpg");
+background-size:cover;
+background-position:center;
+color:white;
+padding:120px 20px;
+}
+
+header h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+header p{
+font-size:20px;
+max-width:700px;
+margin:auto;
+}
+
+/* BOTTONI */
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#ff6600;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+/* PRENOTA */
+
+.prenota-professionale{
+background-image:url("../images/lago.jpg");
+background-size:cover;
+background-position:center;
+padding:100px 20px;
+color:white;
+}
+
+.overlay{
+background:rgba(0,0,0,0.5);
+padding:40px;
+}
+
+.btn-prenota{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#ff6600;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+/* SERVIZI */
+
+#servizi{
+padding:60px 20px;
+background:white;
+}
+
+/* GALLERY */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:40px;
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
+}
+
+.room,.activity{
+background:white;
+padding:15px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+
+footer{
+background:#333;
+color:white;
+padding:20px;
+}
