@@ -49,6 +49,9 @@
 <button type="submit">Invia richiesta</button>
 
 </form>
+<h2>Prenota direttamente</h2>
 
-</body>
+<a href="https://wa.me/393000000000" class="btn">
+Prenota su WhatsApp
+</a></body>
 </html>
