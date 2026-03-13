@@ -28,17 +28,16 @@ text-decoration:none;
 font-weight:bold;
 }
 
-/* HERO */
-
-header{
+/* HERO 
+}
+.hero{
 background-image:url("../images/lago.jpg");
 background-size:cover;
 background-position:center;
+padding:160px 20px;
 color:white;
-padding:120px 20px;
-}
-
-header h1{
+text-align:center;
+}header h1{
 font-size:48px;
 margin-bottom:20px;
 }
