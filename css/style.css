@@ -1,19 +1,31 @@
-body{:root{
+/* PALETTE COLORI LAGO DI GARDA */
 
+:root{
 --blu-lago:#1e4f6f;
 --turchese:#3ba7a0;
 --sabbia:#f4f6f7;
-
+--bianco:#ffffff;
 }
+
+/* RESET BASE */
+
 body{
-font-family:Arial, sans-serif;
+font-family:Arial, Helvetica, sans-serif;
 margin:0;
 background:var(--sabbia);
 color:#333;
-}
+line-height:1.6;
 }
 
-/* MENU */
+h1,h2,h3{
+margin-bottom:10px;
+}
+
+section{
+padding:60px 20px;
+}
+
+/* NAVBAR */
 
 nav{
 background:var(--blu-lago);
@@ -25,39 +37,23 @@ display:flex;
 justify-content:center;
 gap:30px;
 list-style:none;
-padding:0;
 margin:0;
+padding:0;
 }
 
 nav a{
 color:white;
 text-decoration:none;
 font-weight:bold;
+font-size:18px;
 }
 
 nav a:hover{
 color:var(--turchese);
 }
 
-}
+/* HERO */
 
-nav ul{
-list-style:none;
-margin:0;
-padding:0;
-display:flex;
-justify-content:center;
-gap:30px;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-font-weight:bold;
-}
-
-/* HERO 
-}
 .hero{
 background-image:url("../images/lago.jpg");
 background-size:cover;
@@ -69,216 +65,46 @@ justify-content:center;
 align-items:center;
 text-align:center;
 color:white;
-}
+padding:20px;
 }
 
-header p{
+.hero h1{
+font-size:42px;
+}
+
+.hero p{
 font-size:20px;
-max-width:700px;
-margin:auto;
 }
 
 /* BOTTONI */
 
-.btn{
-display:inline-block;
-margin-top:20px;
-padding:12px 25px;
-background:#ff6600;
-color:white;
-text-decoration:none;
-border-radius:5px;
-}
-
-/* PRENOTA */
-
-.prenota-professionale{
-background-image:url("../images/lago.jpg");
-background-size:cover;
-background-position:center;
-padding:100px 20px;
-color:white;
-}
-
-.overlay{
-background:rgba(0,0,0,0.5);
-padding:40px;
-}
-
 .btn-prenota{
-display:inline-block;
-margin-top:20px;
-padding:12px 25px;
-background:#ff6600;
+background:var(--turchese);
 color:white;
+padding:12px 25px;
+border-radius:25px;
 text-decoration:none;
-border-radius:5px;
+display:inline-block;
+margin-top:15px;
+font-weight:bold;
 }
 
-/* SERVIZI */
-
-#servizi{
-padding:60px 20px;
-background:white;
+.btn-prenota:hover{
+background:var(--blu-lago);
 }
 
-/* GALLERY */
+/* GALLERIA GENERALE */
 
 .gallery{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
-padding:40px;
-}
-
-.gallery img{
-width:100%;
-border-radius:10px;
-}
-
-.room,.activity{
-background:white;
-padding:15px;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
-}
-
-/* FOOTER */
-
-footer{
-background:#333;
-color:white;
-padding:20px;
-}
-.form-prenota{
-max-width:500px;
+max-width:1100px;
 margin:auto;
-display:flex;
-flex-direction:column;
-gap:10px;
 }
 
-.form-prenota input,
-.form-prenota select,
-.form-prenota textarea{
-padding:10px;
-border-radius:5px;
-border:1px solid #ccc;
-}
+/* IMMAGINI */
 
-.form-prenota button{
-background:#ff6600;
-color:white;
-padding:12px;
-border:none;
-border-radius:5px;
-cursor:pointer;
-}
-.form-prenota{
-max-width:500px;
-margin:auto;
-display:flex;
-flex-direction:column;
-gap:10px;
-}
-
-.form-prenota input,
-.form-prenota select,
-.form-prenota textarea{
-padding:10px;
-border-radius:5px;
-border:1px solid #ccc;
-}
-
-.form-prenota button{
-background:#ff6600;
-color:white;
-padding:12px;
-border:none;
-border-radius:5px;
-cursor:pointer;
-}
-.whatsapp-float{
-position:fixed;
-bottom:25px;
-right:25px;
-background:#25D366;
-color:white;
-font-size:32px;
-width:65px;
-height:65px;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-text-decoration:none;
-box-shadow:0 4px 10px rgba(0,0,0,0.3);
-z-index:1000;
-}}
-
-.whatsapp-float:hover{
-background:#1ebe5d;
-}
-.recensioni{
-background:#f5f5f5;
-padding:60px 20px;
-text-align:center;
-}
-
-.reviews{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-margin-top:30px;
-}
-
-.review{
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-}
-.prezzi{
-padding:60px 20px;
-text-align:center;
-background:white;
-}
-
-.price-cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-margin-top:30px;
-}
-
-.price-card{
-background:#f8f8f8;
-padding:25px;
-border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-}
-
-.price{
-font-size:28px;
-color:#ff6600;
-font-weight:bold;
-margin:15px 0;
-}
-.price-card{
-background:#f8f8f8;
-padding:25px;
-border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-display:flex;
-flex-direction:column;
-justify-content:space-between;
-}
-.gallery img{
-width:100%;
-height:220px;
-object-fit:cover;
-border-radius:10px;
-}
 img{
 max-width:100%;
 height:auto;
@@ -295,4 +121,138 @@ object-fit:cover;
 width:100%;
 height:200px;
 object-fit:cover;
+}
+
+/* SEZIONE CAMERE */
+
+.rooms{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+max-width:1100px;
+margin:auto;
+}
+
+.room{
+background:white;
+padding:15px;
+border-radius:12px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.room h3{
+margin-top:10px;
+}
+
+/* PREZZI */
+
+.price-section{
+background:#e8f2f4;
+}
+
+.price-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+max-width:1100px;
+margin:auto;
+}
+
+.price-card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.price-card h3{
+color:var(--blu-lago);
+}
+
+.price-card p{
+font-size:20px;
+font-weight:bold;
+}
+
+/* FORM PRENOTAZIONE */
+
+.form-prenota{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.form-prenota input,
+.form-prenota select,
+.form-prenota textarea{
+padding:10px;
+border-radius:5px;
+border:1px solid #ccc;
+font-size:16px;
+}
+
+.form-prenota button{
+background:var(--turchese);
+color:white;
+border:none;
+padding:12px;
+border-radius:25px;
+font-size:16px;
+cursor:pointer;
+}
+
+.form-prenota button:hover{
+background:var(--blu-lago);
+}
+
+/* MAPPA */
+
+.mappa iframe{
+border-radius:10px;
+}
+
+/* FOOTER */
+
+footer{
+background:var(--blu-lago);
+color:white;
+text-align:center;
+padding:40px 20px;
+margin-top:40px;
+}
+
+footer h3{
+margin-bottom:10px;
+}
+
+footer p{
+margin:5px 0;
+}
+
+/* WHATSAPP FLOAT */
+
+.whatsapp-float{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:white;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+text-decoration:none;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+z-index:1000;
+}
+
+.whatsapp-float:hover{
+background:#1ebd5a;
 }
