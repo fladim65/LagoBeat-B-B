@@ -175,9 +175,9 @@ bottom:25px;
 right:25px;
 background:#25D366;
 color:white;
-font-size:28px;
-width:60px;
-height:60px;
+font-size:32px;
+width:65px;
+height:65px;
 border-radius:50%;
 display:flex;
 align-items:center;
@@ -185,7 +185,7 @@ justify-content:center;
 text-decoration:none;
 box-shadow:0 4px 10px rgba(0,0,0,0.3);
 z-index:1000;
-}
+}}
 
 .whatsapp-float:hover{
 background:#1ebe5d;
