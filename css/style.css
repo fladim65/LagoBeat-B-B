@@ -34,12 +34,14 @@ font-weight:bold;
 background-image:url("../images/lago.jpg");
 background-size:cover;
 background-position:center;
-padding:160px 20px;
-color:white;
+height:70vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 text-align:center;
-}header h1{
-font-size:48px;
-margin-bottom:20px;
+color:white;
+}
 }
 
 header p{
