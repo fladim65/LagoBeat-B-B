@@ -1,4 +1,10 @@
-body{
+body{:root{
+
+--blu-lago:#1e4f6f;
+--turchese:#3ba7a0;
+--sabbia:#f4f6f7;
+
+}
 font-family: Arial, sans-serif;
 margin:0;
 padding:0;
