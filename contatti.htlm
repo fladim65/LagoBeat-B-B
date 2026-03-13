@@ -4,7 +4,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Prenotazione LagoBeat</title>
+
+<title>Prenotazione LagoBeat B&B</title>
 
 <link rel="stylesheet" href="css/style.css">
 
@@ -12,23 +13,48 @@
 
 <body>
 
+<nav>
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="camere.html">Camere</a></li>
+
+<li><a href="servizi.html">Servizi</a></li>
+
+<li><a href="contatti.html">Prenota</a></li>
+
+</ul>
+</nav>
+
+<header class="hero">
+
 <h1>Prenota il tuo soggiorno</h1>
 
-<form class="form-prenota">
+<p>LagoBeat B&B - Lago di Garda</p>
+
+</header>
+
+
+<section class="prenotazione">
+
+<h2>Richiedi disponibilità</h2>
+
+<form action="mailto:info@lagobeatbb.com" method="post" class="form-prenota">
 
 <label>Nome</label>
-<input type="text" required>
+<input type="text" placeholder="Il tuo nome" required>
 
 <label>Email</label>
-<input type="email" required>
+<input type="email" placeholder="La tua email" required>
 
 <label>Data arrivo</label>
-<input type="date">
+<input type="date" required>
 
 <label>Data partenza</label>
-<input type="date">
+<input type="date" required>
 
-<label>Camera</label>
+<label>Seleziona camera</label>
 
 <select>
 
@@ -44,32 +70,72 @@
 
 <label>Messaggio</label>
 
-<textarea></textarea>
+<textarea placeholder="Richieste particolari..."></textarea>
 
 <button type="submit">Invia richiesta</button>
 
 </form>
 
-</body>
-</html>
-<h2>Prenota direttamente</h2>
+</section>
 
-<a href="https://wa.me/393282124247" class="btn">
-Prenota su WhatsApp
-</a>
-<a href="https://www.booking.com" class="btn">
-Prenota su Booking
-</a>
+
+<section class="contatti-info">
+
+<h2>Contatti</h2>
+
+<p><strong>Indirizzo:</strong> Via della Filanda 3</p>
+
+<p><strong>Zona:</strong> Tra Desenzano e Salò - Lago di Garda</p>
+
+<p><strong>Email:</strong> info@lagobeatbb.com</p>
+
+<p><strong>Telefono:</strong> +39 123456789</p>
+
+</section>
+
+
+<section class="mappa">
+
 <h2>Dove siamo</h2>
 
-<p>
-Via della Filanda 3  
-Tra Desenzano e Salò  
-Lago di Garda
-</p>
-
 <iframe
-src="https://maps.google.com/maps?q=via%20della%20filanda%203%20lago%20di%20garda&t=&z=13&ie=UTF8&iwloc=&output=embed"
+src="https://www.google.com/maps?q=Via+della+Filanda+3+Desenzano+del+Garda&output=embed"
 width="100%"
-height="400">
+height="400"
+style="border:0;"
+allowfullscreen=""
+loading="lazy">
 </iframe>
+
+</section>
+
+
+<section class="prenota-esterno">
+
+<h2>Prenota direttamente</h2>
+
+<a href="https://wa.me/39123456789" class="btn-prenota">
+Prenota su WhatsApp
+</a>
+
+<a href="https://www.booking.com" class="btn-prenota">
+Prenota su Booking
+</a>
+
+</section>
+
+
+<footer>
+
+<p>LagoBeat B&B</p>
+
+<p>Via della Filanda 3 - Lago di Garda</p>
+
+<p>© 2025 LagoBeat</p>
+
+</footer>
+
+
+</body>
+
+</html>
