@@ -1,45 +1,54 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contatti - LagoBeatB&B</title>
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prenotazione LagoBeat</title>
+
+<link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
 
-<header>
-  <h1>Contattaci</h1>
-  <p>Scrivici per informazioni o prenotazioni, risponderemo al più presto.</p>
-</header>
+<h1>Prenota il tuo soggiorno</h1>
 
-<nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="camere.html">Camere</a></li>
-    <li><a href="servizi.html">Servizi</a></li>
-    <li><a href="contatti.html">Contatti</a></li>
-  </ul>
-</nav>
+<form class="form-prenota">
 
-<section>
-  <form action="https://formspree.io/f/tuo-id" method="POST">
-    <label>Nome:</label>
-    <input type="text" name="name" required>
-    
-    <label>Email:</label>
-    <input type="email" name="email" required>
-    
-    <label>Messaggio:</label>
-    <textarea name="message" required></textarea>
-    
-    <button type="submit">Invia</button>
-  </form>
-</section>
+<label>Nome</label>
+<input type="text" required>
 
-<footer>
-  <p>Contatti: info@lagobeatbb.com | Telefono: +39 123 456789</p>
-</footer>
+<label>Email</label>
+<input type="email" required>
+
+<label>Data arrivo</label>
+<input type="date">
+
+<label>Data partenza</label>
+<input type="date">
+
+<label>Camera</label>
+
+<select>
+
+<option>Camera Matrimoniale - 140€</option>
+
+<option>Camera Vista Lago - 190€</option>
+
+<option>Family Room - 240€</option>
+
+<option>Suite LagoBeat - 280€</option>
+
+</select>
+
+<label>Messaggio</label>
+
+<textarea></textarea>
+
+<button type="submit">Invia richiesta</button>
+
+</form>
 
 </body>
 </html>
