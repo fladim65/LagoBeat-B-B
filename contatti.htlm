@@ -1,141 +1,27 @@
 <!DOCTYPE html>
 <html lang="it">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Prenotazione LagoBeat B&B</title>
-
-<link rel="stylesheet" href="css/style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contattaci</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<nav>
-<ul>
-
-<li><a href="index.html">Home</a></li>
-
-<li><a href="camere.html">Camere</a></li>
-
-<li><a href="servizi.html">Servizi</a></li>
-
-<li><a href="contatti.html">Prenota</a></li>
-
-</ul>
-</nav>
-
-<header class="hero">
-
-<h1>Prenota il tuo soggiorno</h1>
-
-<p>LagoBeat B&B - Lago di Garda</p>
-
-</header>
-
-
-<section class="prenotazione">
-
-<h2>Richiedi disponibilità</h2>
-
-<form action="mailto:info@lagobeatbb.com" method="post" class="form-prenota">
-
-<label>Nome</label>
-<input type="text" placeholder="Il tuo nome" required>
-
-<label>Email</label>
-<input type="email" placeholder="La tua email" required>
-
-<label>Data arrivo</label>
-<input type="date" required>
-
-<label>Data partenza</label>
-<input type="date" required>
-
-<label>Seleziona camera</label>
-
-<select>
-
-<option>Camera Matrimoniale - 140€</option>
-
-<option>Camera Vista Lago - 190€</option>
-
-<option>Family Room - 240€</option>
-
-<option>Suite LagoBeat - 280€</option>
-
-</select>
-
-<label>Messaggio</label>
-
-<textarea placeholder="Richieste particolari..."></textarea>
-
-<button type="submit">Invia richiesta</button>
-
-</form>
-
-</section>
-
-
-<section class="contatti-info">
-
-<h2>Contatti</h2>
-
-<p><strong>Indirizzo:</strong> Via della Filanda 3</p>
-
-<p><strong>Zona:</strong> Tra Desenzano e Salò - Lago di Garda</p>
-
-<p><strong>Email:</strong> info@lagobeatbb.com</p>
-
-<p><strong>Telefono:</strong> +39 123456789</p>
-
-</section>
-
-
-<section class="mappa">
-
-<h2>Dove siamo</h2>
-
-<iframe
-src="https://www.google.com/maps?q=Via+della+Filanda+3+Desenzano+del+Garda&output=embed"
-width="100%"
-height="400"
-style="border:0;"
-allowfullscreen=""
-loading="lazy">
-</iframe>
-
-</section>
-
-
-<section class="prenota-esterno">
-
-<h2>Prenota direttamente</h2>
-
-<a href="https://wa.me/39123456789" class="btn-prenota">
-Prenota su WhatsApp
-</a>
-
-<a href="https://www.booking.com" class="btn-prenota">
-Prenota su Booking
-</a>
-
-</section>
-
-
-<footer>
-
-<p>LagoBeat B&B</p>
-
-<p>Via della Filanda 3 - Lago di Garda</p>
-
-<p>© 2025 LagoBeat</p>
-
-</footer>
-
-
+    <main class="card-section">
+        <h1>Mettiti in contatto con noi</h1>
+        <div class="card">
+            <p>Hai domande? Clicca il tasto qui sotto per inviarci una mail pre-compilata.</p>
+            <a href="mailto:tuaemail@esempio.it?subject=Richiesta Prenotazione" class="btn btn-primary">Invia una Mail</a>
+        </div>
+    </main>
 </body>
-
 </html>
