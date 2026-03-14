@@ -1,66 +1,60 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Camere - LagoBeatB&B</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prenota Camere - LagoBeat B&B</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="img/logo.png" alt="LagoBeat Logo" class="nav-logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="camere.html">Camere</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-  <h1>Le nostre camere</h1>
-  <p>Scopri le 55 camere del LagoBeatB&B, arredate con cura per il tuo comfort.</p>
-</header>
+    <main class="container">
+        <section class="card">
+            <h1>Prenota il tuo soggiorno</h1>
+            <p>Seleziona le date disponibili nel calendario sottostante o contattaci direttamente.</p>
 
-<nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="camere.html">Camere</a></li>
-    <li><a href="servizi.html">Servizi</a></li>
-    <li><a href="contatti.html">Contatti</a></li>
-  </ul>
-</nav>
+            <div class="main-image">
+                <img src="img/camera1.jpg" alt="Camera LagoBeat" onerror="this.src='https://via.placeholder.com/800x400?text=Immagine+Camera'">
+            </div>
 
-<section class="camere">
-  <h2>Le nostre camere</h2>
+            <div class="button-grid">
+                <a href="https://calendar.google.com/calendar/u/0/r/appointments/schedules/AcZssM2lR-N-Cq6NfGgB8Wp_F6m2T6-Jq8p-0-v-t-w" target="_blank" class="btn btn-calendar">
+                    📅 Scegli Date e Prenota
+                </a>
 
-  <div class="gallery">
+                <a href="mailto:info@lagobeat.it?subject=Richiesta Prenotazione" class="btn btn-mail">
+                    ✉️ Inviaci una Mail
+                </a>
 
-    <div class="room">
-      <img src="images/camera1.jpg" alt="Camera matrimoniale LagoBeat">
-      <h3>Camera Matrimoniale</h3>
-      <p>Comfort e vista lago per un soggiorno rilassante.</p>
-    </div>
+                <a href="https://www.booking.com/hotel/it/lagobeat.it.html" target="_blank" class="btn btn-booking">
+                    🏨 Vedi su Booking
+                </a>
+            </div>
+        </section>
 
-    <div class="room">
-      <img src="images/camera2.jpg" alt="Camera doppia LagoBeat">
-      <h3>Camera Doppia</h3>
-      <p>Perfetta per amici o coppie in vacanza.</p>
-    </div>
-
-    <div class="room">
-      <img src="images/camera3.jpg" alt="Family Room LagoBeat">
-      <h3>Family Room</h3>
-      <p>Spaziosa e ideale per famiglie.</p>
-    </div>
-<div class="activity">
-
-<img src="images/lago-garda.jpg" alt="Panorama Lago di Garda">
-
-<h3>Panorama del Lago</h3>
-
-</div>
-  </div>
-</section>
-  <p>Ogni camera è dotata di bagno privato, Wi-Fi gratuito e vista sul Lago di Garda.</p>
-</section>
-
-<a href="contatti.html" class="btn">Prenota ora</a>
-
-<footer>
-  <p>Contatti: info@lagobeatbb.com | Telefono: +39 123 456789</p>
-</footer>
-
+        <section class="details">
+            <div class="card">
+                <h3>Servizi inclusi</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li>✅ Colazione inclusa</li>
+                    <li>✅ Wi-Fi Gratuito</li>
+                    <li>✅ Vista Lago</li>
+                    <li>✅ Aria Condizionata</li>
+                </ul>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
