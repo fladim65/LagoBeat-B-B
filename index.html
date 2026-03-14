@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LagoBeat B&B - Prenotazioni</title>
+    <title>LagoBeat B&B - Desenzano del Garda</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
         <nav>
             <div class="logo-container">
@@ -14,48 +15,68 @@
             </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="camere.html">Camere</a></li>
                 <li><a href="contatti.html">Contatti</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Benvenuti al LagoBeat B&B</h1>
-                <p>Il tuo relax a portata di click.</p>
-            </div>
-        </section>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Benvenuti al LagoBeat B&B</h1>
+            <p>Il tuo rifugio esclusivo a pochi passi dal Lago di Garda</p>
+            <a href="camere.html" class="btn btn-primary">Scopri le Camere</a>
+        </div>
+    </section>
 
-        <section id="prenota" class="container">
-            <div class="card">
-                <h2>Prenota Camere e Attività</h2>
-                <p>Seleziona le date sul calendario o contattaci direttamente via email.</p>
-                
-                <div class="button-grid">
-                    <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/IL_TUO_LINK" target="_blank" class="btn btn-calendar">
-                        📅 Prenota su Calendar
-                    </a>
-                    
-                    <a href="https://www.booking.com/hotel/it/lagobeat.it.html" target="_blank" class="btn btn-booking">
-                        🏨 Prenota su Booking
-                    </a>
-
-                    <a href="mailto:info@lagobeat.it?subject=Richiesta Informazioni" class="btn btn-email">
-                        ✉️ Inviaci una Mail
-                    </a>
+    <main class="container">
+        <section class="intro card">
+            <h2>Un'esperienza indimenticabile</h2>
+            <p>Situato nella splendida cornice di Desenzano, il nostro B&B offre comfort, relax e una posizione strategica per esplorare le bellezze del lago.</p>
+            
+            <div class="features-grid">
+                <div class="feature">
+                    <span>🏠</span>
+                    <p>Camere Moderne</p>
+                </div>
+                <div class="feature">
+                    <span>☕</span>
+                    <p>Colazione Inclusa</p>
+                </div>
+                <div class="feature">
+                    <span>🌊</span>
+                    <p>Vista Lago</p>
+                </div>
+                <div class="feature">
+                    <span>🚲</span>
+                    <p>Attività Locali</p>
                 </div>
             </div>
         </section>
 
-        <section class="gallery container">
+        <section class="cta-section card">
+            <h2>Sei pronto a partire?</h2>
+            <p>Prenota ora la tua camera tramite il nostro sistema automatico o scrivici per maggiori informazioni.</p>
+            <div class="button-grid">
+                <a href="camere.html" class="btn btn-calendar">📅 Vai al Calendario</a>
+                
+                <a href="mailto:info@lagobeat.it?subject=Informazioni Soggiorno" class="btn btn-mail">✉️ Inviaci una Mail</a>
+            </div>
+        </section>
+
+        <section class="gallery">
             <div class="image-box">
-                <img src="img/camera1.jpg" alt="Camera 1">
+                <img src="img/camera1.jpg" alt="Interno Camera">
             </div>
             <div class="image-box">
-                <img src="img/camera2.jpg" alt="Camera 2">
+                <img src="img/sfondo.jpg" alt="Vista Esterna">
             </div>
         </section>
     </main>
+
+    <footer>
+        <p>&copy; 2026 LagoBeat B&B - Desenzano del Garda - Via della Filanda 3</p>
+    </footer>
+
 </body>
 </html>
