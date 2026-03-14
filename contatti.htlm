@@ -1,99 +1,32 @@
-/* Palette Colori: Blu Professionale e Sfondo Soft */
-:root {
-    --bg-color: #f0f4f8; /* Un grigio-azzurro molto chiaro, riposante */
-    --primary-blue: #0056b3;
-    --hover-blue: #003d80;
-    --booking-orange: #f2994a;
-    --text-dark: #2d3436;
-    --white-card: #ffffff;
-}
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contattaci - LagoBeat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="img/logo.png" alt="LagoBeat Logo" class="nav-logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
 
-body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-dark);
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: var(--primary-blue);
-    padding: 15px 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li { display: inline; margin: 0 15px; }
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.container {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-}
-
-.hero {
-    text-align: center;
-    padding: 40px 20px;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('tuo-sfondo.jpg');
-    background-size: cover;
-    color: white;
-}
-
-.card {
-    background: var(--white-card);
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    padding: 30px;
-    text-align: center;
-}
-
-.button-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 30px;
-}
-
-/* Stile Pulsanti */
-.btn {
-    padding: 15px 25px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-    transition: transform 0.2s, background 0.3s;
-    display: inline-block;
-    min-width: 200px;
-}
-
-.btn:hover {
-    transform: translateY(-3px);
-}
-
-.btn-primary { background-color: var(--primary-blue); }
-.btn-primary:hover { background-color: var(--hover-blue); }
-
-.btn-booking { background-color: var(--booking-orange); }
-.btn-booking:hover { background-color: #e67e22; }
-
-.btn-mail { 
-    background-color: transparent; 
-    border: 2px solid var(--primary-blue); 
-    color: var(--primary-blue);
-}
-.btn-mail:hover { 
-    background-color: var(--primary-blue); 
-    color: white; 
-}
+    <main class="container">
+        <div class="card">
+            <h1>Contattaci</h1>
+            <p>Siamo qui per aiutarti a pianificare il tuo soggiorno perfetto.</p>
+            <p>📍 Indirizzo della tua struttura</p>
+            <p>📞 +39 000 000 000</p>
+            <a href="mailto:info@lagobeat.it" class="btn btn-calendar" style="margin-top: 20px;">Invia una Mail</a>
+        </div>
+    </main>
+</body>
+</html>
