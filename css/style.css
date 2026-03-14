@@ -1,26 +1,34 @@
-/* Reset e Stili Generali */
+/* Palette Colori: Blu Professionale e Sfondo Soft */
+:root {
+    --bg-color: #f0f4f8; /* Un grigio-azzurro molto chiaro, riposante */
+    --primary-blue: #0056b3;
+    --hover-blue: #003d80;
+    --booking-orange: #f2994a;
+    --text-dark: #2d3436;
+    --white-card: #ffffff;
+}
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-dark);
     margin: 0;
-    background-color: #f4f7f6; /* Un grigio molto chiaro, non bianco puro */
-    color: #333;
-}
-
-header {
-    background: #2c3e50;
-    color: #fff;
-    padding: 1rem 0;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
     padding: 0;
 }
 
-nav ul li { margin: 0 20px; }
+header {
+    background-color: var(--primary-blue);
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li { display: inline; margin: 0 15px; }
 
 nav ul li a {
     color: white;
@@ -28,70 +36,64 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Card e Sezioni */
-.card-section {
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: auto;
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.hero {
     text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('tuo-sfondo.jpg');
+    background-size: cover;
+    color: white;
 }
 
 .card {
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    overflow: hidden;
-    padding: 20px;
-    transition: transform 0.3s ease;
+    background: var(--white-card);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    padding: 30px;
+    text-align: center;
 }
 
-.card:hover { transform: translateY(-5px); }
-
-/* Pulsanti */
-.button-group {
-    margin-top: 20px;
+.button-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
+    margin-top: 30px;
 }
 
+/* Stile Pulsanti */
 .btn {
-    display: inline-block;
-    padding: 12px 25px;
-    border-radius: 50px;
+    padding: 15px 25px;
+    border-radius: 8px;
     text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    border: none;
-}
-
-.btn-primary {
-    background-color: #3498db; /* Blu vivace */
+    font-weight: bold;
     color: white;
+    transition: transform 0.2s, background 0.3s;
+    display: inline-block;
+    min-width: 200px;
 }
 
-.btn-primary:hover {
-    background-color: #2980b9;
-    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4);
+.btn:hover {
+    transform: translateY(-3px);
 }
 
-.btn-secondary {
-    background-color: #e67e22; /* Arancione stile Booking */
-    color: white;
-}
+.btn-primary { background-color: var(--primary-blue); }
+.btn-primary:hover { background-color: var(--hover-blue); }
 
-.btn-secondary:hover {
-    background-color: #d35400;
-}
+.btn-booking { background-color: var(--booking-orange); }
+.btn-booking:hover { background-color: #e67e22; }
 
-.btn-outline {
-    border: 2px solid #3498db;
-    color: #3498db;
-    background: transparent;
+.btn-mail { 
+    background-color: transparent; 
+    border: 2px solid var(--primary-blue); 
+    color: var(--primary-blue);
 }
-
-.btn-outline:hover {
-    background: #3498db;
-    color: white;
+.btn-mail:hover { 
+    background-color: var(--primary-blue); 
+    color: white; 
 }
