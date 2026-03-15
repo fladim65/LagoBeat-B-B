@@ -1,22 +1,22 @@
 :root {
-    --bg-color: #f0f4f8; 
-    --primary-blue: #1a73e8;
-    --booking-orange: #f2994a;
-    --white: #ffffff;
-    --text: #202124;
+    --bg-color: #f4f7f9;
+    --primary: #007bff;
+    --secondary: #28a745;
+    --booking: #003580;
+    --text: #333;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     background-color: var(--bg-color);
     color: var(--text);
     margin: 0;
 }
 
 header {
-    background: var(--white);
+    background: white;
     padding: 10px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 nav {
@@ -27,19 +27,19 @@ nav {
     margin: auto;
 }
 
-.nav-logo { height: 50px; }
+.nav-logo { height: 50px; border-radius: 5px; }
 
 nav ul { list-style: none; display: flex; gap: 20px; }
 
-nav ul li a { text-decoration: none; color: var(--primary-blue); font-weight: bold; }
+nav ul li a { text-decoration: none; color: var(--primary); font-weight: bold; }
 
 .container { max-width: 900px; margin: 40px auto; padding: 20px; }
 
 .card {
-    background: var(--white);
+    background: white;
     border-radius: 15px;
     padding: 30px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
     text-align: center;
 }
 
@@ -48,23 +48,36 @@ nav ul li a { text-decoration: none; color: var(--primary-blue); font-weight: bo
     flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 .btn {
-    padding: 12px 25px;
-    border-radius: 8px;
+    padding: 15px 25px;
+    border-radius: 50px;
     text-decoration: none;
-    font-weight: bold;
     color: white;
+    font-weight: bold;
     transition: 0.3s;
     min-width: 180px;
 }
 
-.btn-calendar { background-color: var(--primary-blue); }
-.btn-mail { background-color: #34a853; } /* Verde Mail */
-.btn-booking { background-color: var(--booking-orange); }
+.btn-calendar { background-color: var(--primary); }
+.btn-mail { background-color: var(--secondary); }
+.btn-booking { background-color: var(--booking); }
 
-.btn:hover { transform: translateY(-2px); opacity: 0.9; }
+.btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
 
-img { max-width: 100%; border-radius: 10px; }
+.hero {
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-overlay {
+    background: rgba(0,0,0,0.5);
+    padding: 20px 40px;
+    border-radius: 15px;
+}
