@@ -71,3 +71,21 @@ nav ul li a { text-decoration: none; color: var(--primary); font-weight: bold; t
 }
 
 .gallery-item p { font-weight: bold; margin-top: 10px; font-size: 18px; }
+.price-tag {
+    display: inline-block;
+    background: #28a745;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.gallery-item {
+    text-align: center;
+    background: white;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
