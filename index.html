@@ -5,22 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LagoBeat B&B - Avventura, Sport e Relax</title>
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        .hero {
-            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/panoramica.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 80vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-            flex-direction: column;
-        }
-        .hero h1 { font-size: 3.5rem; margin-bottom: 10px; }
-        .hero p { font-size: 1.5rem; margin-bottom: 25px; }
-    </style>
 </head>
 <body>
     <header>
@@ -36,10 +20,10 @@
     </header>
 
     <main>
-        <section class="hero">
-            <h1>LAGOBEAT B&B</h1>
-            <p>Avventura, Sport e Relax a Malcesine</p>
-            <a href="camere.html" class="btn" style="background:#e67e22; color:white; padding:15px 30px; border-radius:50px; text-decoration:none; font-weight:bold;">VEDI LE NOSTRE SUITE</a>
+        <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/panoramica.jpg'); background-size: cover; background-position: center; height: 80vh; display: flex; align-items: center; justify-content: center; color: white; text-align: center; flex-direction: column;">
+            <h1 style="font-size: 3.5rem; margin-bottom: 10px;">LAGOBEAT B&B</h1>
+            <p style="font-size: 1.5rem; margin-bottom: 25px;">Avventura, Sport e Relax a Malcesine</p>
+            <a href="camere.html" class="btn" style="background:#e67e22; color:white; padding:15px 30px; border-radius:50px; text-decoration:none; font-weight:bold;">SCOPRI LE NOSTRE SUITE</a>
         </section>
 
         <section class="container" style="padding: 60px 5%;">
@@ -48,31 +32,35 @@
                     <img src="images/sala-colazione.jpg" alt="Il Risveglio Gourmet" style="width:100%; border-radius:15px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
                 </div>
                 <div style="flex: 1; min-width: 300px;">
-                    <h2>Il Risveglio Gourmet</h2>
-                    <p>Inizia la giornata con una vista mozzafiato sul Lago di Garda e una colazione ricca di prodotti locali artigianali selezionati apposta per te.</p>
+                    <h2 style="font-size: 2rem; color: #2c3e50;">Il Risveglio Gourmet</h2>
+                    <p style="color: #666; line-height: 1.6;">Ogni mattina selezioniamo per voi i migliori prodotti locali artigianali: torte fatte in casa, brioche fresche e una vista mozzafiato sul Lago di Garda.</p>
                     <br>
-                    <a href="colazioni.html" class="btn" style="background:#2c3e50; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">Scopri la Colazione</a>
+                    <a href="colazioni.html" class="btn" style="background:#2c3e50; color:white; padding:12px 25px; text-decoration:none; border-radius:5px; font-weight:bold;">Scopri la Colazione</a>
                 </div>
             </div>
         </section>
 
-        <section style="background: #f4f4f4; padding: 60px 5%; text-align: center;">
-            <h2>Dicono di noi</h2>
-            <div class="grid" style="margin-top: 30px;">
-                <div class="card" style="padding: 20px;">
-                    <p>"Posizione fantastica e suite bellissime. La colazione vista lago è un sogno!"</p>
-                    <p><strong>- Marco R.</strong></p>
+        <section style="background: #f9f9f9; padding: 60px 5%; text-align: center;">
+            <h2 style="margin-bottom: 40px;">Cosa dicono i nostri ospiti</h2>
+            <div class="grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                <div class="card" style="padding: 30px; background: white; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                    <p style="font-style: italic; color: #555;">"Una vista sul lago incredibile e una colazione da 10 e lode. Torneremo sicuramente!"</p>
+                    <p style="margin-top: 20px; font-weight: bold; color: #e67e22;">★★★★★</p>
+                    <p><strong>- Giulia P.</strong></p>
                 </div>
-                <div class="card" style="padding: 20px;">
-                    <p>"Perfetto per chi ama lo sport. Deposito bici sicuro e staff gentilissimo."</p>
-                    <p><strong>- Elena S.</strong></p>
+                <div class="card" style="padding: 30px; background: white; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                    <p style="font-style: italic; color: #555;">"Suite moderna, pulitissima e comodissima per chi fa sport. Il miglior B&B di Malcesine."</p>
+                    <p style="margin-top: 20px; font-weight: bold; color: #e67e22;">★★★★★</p>
+                    <p><strong>- Thomas K.</strong></p>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer style="background:#2c3e50; color:white; text-align:center; padding:30px; margin-top: 50px;">
-        <p>&copy; 2026 LagoBeat B&B - Via del Lago, 12 - Malcesine (VR)</p>
+    <footer style="background:#2c3e50; color:white; text-align:center; padding:40px 20px; margin-top: 50px;">
+        <p style="margin-bottom: 10px; font-weight: bold;">LAGOBEAT B&B</p>
+        <p style="font-size: 0.9rem; opacity: 0.8;">Via del Lago, 12 - 37018 Malcesine (VR)</p>
+        <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 10px;">&copy; 2026 Tutti i diritti riservati</p>
     </footer>
 </body>
 </html>
