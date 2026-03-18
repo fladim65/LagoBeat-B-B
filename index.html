@@ -10,7 +10,7 @@
             background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/panoramica.jpg');
             background-size: cover;
             background-position: center;
-            height: 90vh;
+            height: 80vh;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -18,13 +18,8 @@
             text-align: center;
             flex-direction: column;
         }
-        .hero h1 { font-size: 4rem; margin-bottom: 10px; }
-        .hero .slogan { font-size: 1.8rem; margin-bottom: 30px; font-weight: 300; }
-        
-        .reviews { padding: 60px 5%; background: #f9f9f9; text-align: center; }
-        .review-grid { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 30px; }
-        .review-card { background: white; padding: 20px; border-radius: 10px; width: 300px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-        .stars { color: #f1c40f; margin-bottom: 10px; }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.5rem; margin-bottom: 25px; }
     </style>
 </head>
 <body>
@@ -43,48 +38,41 @@
     <main>
         <section class="hero">
             <h1>LAGOBEAT B&B</h1>
-            <p class="slogan">Avventura, Sport e Relax a Malcesine</p>
-            <a href="camere.html" class="btn" style="background:#e67e22; color:white; padding:15px 40px; border-radius:50px; text-decoration:none; font-weight:bold;">SCOPRI LE SUITE</a>
+            <p>Avventura, Sport e Relax a Malcesine</p>
+            <a href="camere.html" class="btn" style="background:#e67e22; color:white; padding:15px 30px; border-radius:50px; text-decoration:none; font-weight:bold;">VEDI LE NOSTRE SUITE</a>
         </section>
 
         <section class="container" style="padding: 60px 5%;">
             <div style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap;">
                 <div style="flex: 1; min-width: 300px;">
-                    <img src="images/sala-colazioni.jpg" alt="Sala Colazioni" style="width:100%; border-radius:15px;">
+                    <img src="images/sala-colazione.jpg" alt="Il Risveglio Gourmet" style="width:100%; border-radius:15px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
                 </div>
                 <div style="flex: 1; min-width: 300px;">
                     <h2>Il Risveglio Gourmet</h2>
-                    <p>Inizia la giornata con una vista mozzafiato sul Lago di Garda e una colazione ricca di prodotti locali artigianali.</p>
+                    <p>Inizia la giornata con una vista mozzafiato sul Lago di Garda e una colazione ricca di prodotti locali artigianali selezionati apposta per te.</p>
                     <br>
-                    <a href="colazioni.html" class="btn" style="background:#2c3e50; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">Vedi la Sala Colazioni</a>
+                    <a href="colazioni.html" class="btn" style="background:#2c3e50; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">Scopri la Colazione</a>
                 </div>
             </div>
         </section>
 
-        <section class="reviews">
-            <h2>Cosa dicono di noi</h2>
-            <div class="review-grid">
-                <div class="review-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"Posizione fantastica e colazione indimenticabile. Torneremo sicuramente!"</p>
-                    <p><strong>- Giulia M.</strong></p>
+        <section style="background: #f4f4f4; padding: 60px 5%; text-align: center;">
+            <h2>Dicono di noi</h2>
+            <div class="grid" style="margin-top: 30px;">
+                <div class="card" style="padding: 20px;">
+                    <p>"Posizione fantastica e suite bellissime. La colazione vista lago è un sogno!"</p>
+                    <p><strong>- Marco R.</strong></p>
                 </div>
-                <div class="review-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"La suite con vista lago è un sogno. Staff gentilissimo e piscina super."</p>
-                    <p><strong>- Riccardo P.</strong></p>
-                </div>
-                <div class="review-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"Perfetto per chi fa sport. Deposito bici comodo e colazione energetica."</p>
-                    <p><strong>- Thomas S.</strong></p>
+                <div class="card" style="padding: 20px;">
+                    <p>"Perfetto per chi ama lo sport. Deposito bici sicuro e staff gentilissimo."</p>
+                    <p><strong>- Elena S.</strong></p>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer style="background:#2c3e50; color:white; text-align:center; padding:30px;">
-        <p>&copy; 2026 LagoBeat B&B - Malcesine (VR)</p>
+    <footer style="background:#2c3e50; color:white; text-align:center; padding:30px; margin-top: 50px;">
+        <p>&copy; 2026 LagoBeat B&B - Via del Lago, 12 - Malcesine (VR)</p>
     </footer>
 </body>
 </html>
