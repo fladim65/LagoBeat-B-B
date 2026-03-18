@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LagoBeat B&B - Avventura, Sport e Relax</title>
+    <title>LagoBeat B&B - Malcesine</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -21,46 +21,63 @@
 
     <main>
         <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/panoramica.jpg'); background-size: cover; background-position: center; height: 80vh; display: flex; align-items: center; justify-content: center; color: white; text-align: center; flex-direction: column;">
-            <h1 style="font-size: 3.5rem; margin-bottom: 10px;">LAGOBEAT B&B</h1>
-            <p style="font-size: 1.5rem; margin-bottom: 25px;">Avventura, Sport e Relax a Malcesine</p>
-            <a href="camere.html" class="btn" style="background:#e67e22; color:white; padding:15px 30px; border-radius:50px; text-decoration:none; font-weight:bold;">SCOPRI LE NOSTRE SUITE</a>
+            <h1>LAGOBEAT B&B</h1>
+            <p>Avventura, Sport e Relax a Malcesine</p>
+            <a href="camere.html" class="btn" style="background:#e67e22; color:white; padding:15px 30px; border-radius:50px; text-decoration:none; font-weight:bold;">VEDI LE SUITE</a>
         </section>
 
         <section class="container" style="padding: 60px 5%;">
             <div style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap;">
                 <div style="flex: 1; min-width: 300px;">
-                    <img src="images/sala-colazione.jpg" alt="Il Risveglio Gourmet" style="width:100%; border-radius:15px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
+                    <img src="images/sala-colazione.jpg" alt="Colazione" style="width:100%; border-radius:15px;">
                 </div>
                 <div style="flex: 1; min-width: 300px;">
-                    <h2 style="font-size: 2rem; color: #2c3e50;">Il Risveglio Gourmet</h2>
-                    <p style="color: #666; line-height: 1.6;">Ogni mattina selezioniamo per voi i migliori prodotti locali artigianali: torte fatte in casa, brioche fresche e una vista mozzafiato sul Lago di Garda.</p>
-                    <br>
-                    <a href="colazioni.html" class="btn" style="background:#2c3e50; color:white; padding:12px 25px; text-decoration:none; border-radius:5px; font-weight:bold;">Scopri la Colazione</a>
-                </div>
-            </div>
-        </section>
-
-        <section style="background: #f9f9f9; padding: 60px 5%; text-align: center;">
-            <h2 style="margin-bottom: 40px;">Cosa dicono i nostri ospiti</h2>
-            <div class="grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
-                <div class="card" style="padding: 30px; background: white; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-                    <p style="font-style: italic; color: #555;">"Una vista sul lago incredibile e una colazione da 10 e lode. Torneremo sicuramente!"</p>
-                    <p style="margin-top: 20px; font-weight: bold; color: #e67e22;">★★★★★</p>
-                    <p><strong>- Giulia P.</strong></p>
-                </div>
-                <div class="card" style="padding: 30px; background: white; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-                    <p style="font-style: italic; color: #555;">"Suite moderna, pulitissima e comodissima per chi fa sport. Il miglior B&B di Malcesine."</p>
-                    <p style="margin-top: 20px; font-weight: bold; color: #e67e22;">★★★★★</p>
-                    <p><strong>- Thomas K.</strong></p>
+                    <h2>Il Risveglio Gourmet</h2>
+                    <p>Prodotti locali e vista lago ogni mattina.</p>
+                    <a href="colazioni.html" class="btn" style="background:#2c3e50; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">Scopri di più</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer style="background:#2c3e50; color:white; text-align:center; padding:40px 20px; margin-top: 50px;">
-        <p style="margin-bottom: 10px; font-weight: bold;">LAGOBEAT B&B</p>
-        <p style="font-size: 0.9rem; opacity: 0.8;">Via del Lago, 12 - 37018 Malcesine (VR)</p>
-        <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 10px;">&copy; 2026 Tutti i diritti riservati</p>
+    <footer style="background:#2c3e50; color:white; text-align:center; padding:30px;">
+        <p>&copy; 2026 LagoBeat B&B - Malcesine</p>
     </footer>
+
+    <div id="chatbot-container" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; font-family: sans-serif;">
+        <div id="chat-window" style="width: 300px; background: white; border-radius: 15px; box-shadow: 0 5px 25px rgba(0,0,0,0.2); display: none; flex-direction: column; overflow: hidden; border: 1px solid #ddd;">
+            <div style="background: #2c3e50; color: white; padding: 15px; font-weight: bold; display: flex; justify-content: space-between;">
+                <span>LagoBeat Assistant</span>
+                <span style="cursor:pointer" onclick="toggleChat()">✖</span>
+            </div>
+            <div id="chat-body" style="padding: 15px; max-height: 350px; overflow-y: auto;">
+                <div id="chat-msg-box" style="margin-bottom: 15px; padding: 10px; border-radius: 10px; background: #f1f1f1; font-size: 0.9rem;">Ciao! Come posso aiutarti?</div>
+                <div id="chat-options" style="display: flex; flex-direction: column; gap: 8px;"></div>
+            </div>
+        </div>
+        <div id="chat-bubble" onclick="toggleChat()" style="width: 60px; height: 60px; background: #e67e22; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+            <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" alt="Chat" style="width: 35px;">
+        </div>
+    </div>
+    <script>
+        const msgBox = document.getElementById('chat-msg-box');
+        const options = document.getElementById('chat-options');
+        const chatWin = document.getElementById('chat-window');
+        function toggleChat() { chatWin.style.display = chatWin.style.display === 'flex' ? 'none' : 'flex'; showMainMenu(); }
+        function showMainMenu() {
+            msgBox.innerHTML = "Benvenuto! Cosa desideri sapere?";
+            options.innerHTML = `
+                <button class="chat-btn-style" onclick="showPrezzi()">💰 Prezzi</button>
+                <button class="chat-btn-style" onclick="showParcheggio()">🚗 Parcheggio</button>
+                <button class="chat-btn-style" onclick="location.href='camere.html'">🛌 Suite</button>
+                <button class="chat-btn-style" onclick="location.href='https://wa.me/393282124247'">💬 WhatsApp</button>`;
+        }
+        function showPrezzi() { msgBox.innerHTML = "Suite da €150/notte con colazione."; options.innerHTML = `<button class="chat-btn-style" onclick="showMainMenu()">⬅️ Indietro</button>`; }
+        function showParcheggio() { msgBox.innerHTML = "Parcheggio privato gratuito in loco."; options.innerHTML = `<button class="chat-btn-style" onclick="showMainMenu()">⬅️ Indietro</button>`; }
+    </script>
+    <style>
+        .chat-btn-style { background: white; border: 1px solid #e67e22; color: #2c3e50; padding: 10px; border-radius: 8px; cursor: pointer; text-align: left; transition: 0.2s; }
+        .chat-btn-style:hover { background: #e67e22; color: white; }
+    </style>
 </body>
 </html>
