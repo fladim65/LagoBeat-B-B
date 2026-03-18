@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LagoBeat B&B - Malcesine</title>
+    <title>LagoBeat B&B - Malcesine | Sport & Relax</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -21,43 +21,47 @@
 
     <main>
         <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/panoramica.jpg'); background-size: cover; background-position: center; height: 80vh; display: flex; align-items: center; justify-content: center; color: white; text-align: center; flex-direction: column;">
-            <h1>LAGOBEAT B&B</h1>
-            <p>Avventura, Sport e Relax a Malcesine</p>
-            <a href="camere.html" class="btn" style="background:#e67e22; color:white; padding:15px 30px; border-radius:50px; text-decoration:none; font-weight:bold;">SCOPRI LE SUITE</a>
+            <h1 style="font-size: 3.5rem; margin-bottom: 10px;">LAGOBEAT B&B</h1>
+            <p style="font-size: 1.5rem; margin-bottom: 30px;">Il tuo rifugio Active & Smart a Malcesine</p>
+            <a href="camere.html" class="btn" style="background:#e67e22; color:white; padding:15px 40px; border-radius:50px; text-decoration:none; font-weight:bold; font-size: 1.1rem; transition: 0.3s;">PRENOTA ORA</a>
         </section>
 
-        <section class="container" style="padding: 60px 5%;">
-            <div style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap;">
+        <section class="container" style="padding: 80px 5%;">
+            <div style="display: flex; align-items: center; gap: 50px; flex-wrap: wrap; max-width: 1200px; margin: auto;">
                 <div style="flex: 1; min-width: 300px;">
-                    <img src="images/sala-colazione.jpg" alt="Sala Colazioni" style="width:100%; border-radius:15px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
+                    <img src="images/sala-colazione.jpg" alt="Sala Colazione Gourmet" style="width:100%; border-radius:20px; box-shadow: 0 15px 30px rgba(0,0,0,0.2);">
                 </div>
                 <div style="flex: 1; min-width: 300px;">
-                    <h2>Il Risveglio Gourmet</h2>
-                    <p>Inizia la giornata con prodotti locali e vista lago. Suite a partire da €220/notte.</p>
-                    <br>
-                    <a href="colazioni.html" class="btn" style="background:#2c3e50; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">Vedi la Sala Colazioni</a>
+                    <h2 style="color: #2c3e50; font-size: 2.5rem; margin-bottom: 20px;">Il Risveglio Gourmet</h2>
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: #555;">Inizia la tua avventura sul Garda con la nostra colazione artigianale vista lago. Suite moderne dotate di ogni comfort tecnologico.</p>
+                    <ul style="list-style: none; padding: 0; margin: 20px 0; font-weight: bold; color: #2c3e50;">
+                        <li>✅ Prezzi a partire da €220/notte</li>
+                        <li>✅ TV Satellitare & Minibar in ogni camera</li>
+                        <li>✅ Animali di piccola taglia i benvenuti</li>
+                    </ul>
+                    <a href="colazioni.html" class="btn" style="background:#2c3e50; color:white; padding:12px 25px; text-decoration:none; border-radius:5px; display: inline-block;">Scopri la Colazione</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer style="background:#2c3e50; color:white; text-align:center; padding:30px;">
-        <p>&copy; 2026 LagoBeat B&B - Malcesine (VR)</p>
+    <footer style="background:#2c3e50; color:white; text-align:center; padding:40px;">
+        <p>&copy; 2026 LagoBeat B&B - Via del Lago, 12 - Malcesine (VR)</p>
     </footer>
 
-    <div id="chatbot-container" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; font-family: sans-serif;">
-        <div id="chat-window" style="width: 320px; background: white; border-radius: 15px; box-shadow: 0 5px 25px rgba(0,0,0,0.2); display: none; flex-direction: column; overflow: hidden; border: 1px solid #ddd;">
-            <div style="background: #2c3e50; color: white; padding: 15px; font-weight: bold; display: flex; justify-content: space-between;">
+    <div id="chatbot-container" style="position: fixed; bottom: 25px; right: 25px; z-index: 1000; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        <div id="chat-window" style="width: 340px; background: white; border-radius: 20px; box-shadow: 0 10px 35px rgba(0,0,0,0.3); display: none; flex-direction: column; overflow: hidden; border: 1px solid #eee;">
+            <div style="background: #2c3e50; color: white; padding: 18px; font-weight: bold; display: flex; justify-content: space-between; align-items: center;">
                 <span>LagoBeat Assistant</span>
-                <span style="cursor:pointer" onclick="toggleChat()">✖</span>
+                <span style="cursor:pointer; font-size: 1.5rem;" onclick="toggleChat()">×</span>
             </div>
-            <div id="chat-body" style="padding: 15px; max-height: 400px; overflow-y: auto;">
-                <div id="chat-msg-box" style="margin-bottom: 15px; padding: 10px; border-radius: 10px; background: #f1f1f1; font-size: 0.9rem;">Ciao! Come posso aiutarti oggi?</div>
-                <div id="chat-options" style="display: flex; flex-direction: column; gap: 8px;"></div>
+            <div id="chat-body" style="padding: 20px; max-height: 400px; overflow-y: auto; background: #f9f9f9;">
+                <div id="chat-msg-box" style="margin-bottom: 20px; padding: 12px; border-radius: 12px; background: white; border-left: 4px solid #e67e22; font-size: 0.95rem; color: #333; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">Ciao! Sono il tuo assistente virtuale. Come posso aiutarti oggi?</div>
+                <div id="chat-options" style="display: flex; flex-direction: column; gap: 10px;"></div>
             </div>
         </div>
-        <div id="chat-bubble" onclick="toggleChat()" style="width: 60px; height: 60px; background: #e67e22; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-            <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" alt="Chat" style="width: 35px;">
+        <div id="chat-bubble" onclick="toggleChat()" style="width: 65px; height: 65px; background: #e67e22; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 6px 20px rgba(230,126,34,0.4); transition: transform 0.3s;">
+            <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" alt="Chat" style="width: 35px; filter: invert(1);">
         </div>
     </div>
 
@@ -73,52 +77,71 @@
 
         // LIVELLO 1: Menu Principale
         function showL1() {
-            msgBox.innerHTML = "Benvenuto! Seleziona un'opzione:";
+            msgBox.innerHTML = "Scegli un'area di interesse per ricevere assistenza:";
             options.innerHTML = `
-                <button class="chat-btn" onclick="showL2Camere()">🛌 Camere e Prezzi</button>
+                <button class="chat-btn" onclick="showL2Camere()">🛌 Suite e Dotazioni</button>
                 <button class="chat-btn" onclick="showL2Servizi()">🚲 Sport e Animali</button>
-                <button class="chat-btn" onclick="location.href='https://wa.me/393282124247'">💬 Parla con noi</button>`;
+                <button class="chat-btn" onclick="location.href='https://wa.me/393282124247'">💬 Parla su WhatsApp</button>`;
         }
 
-        // LIVELLO 2: Dettagli Camere
+        // LIVELLO 2: Dettaglio Suite
         function showL2Camere() {
-            msgBox.innerHTML = "Suite da €220/notte. Cosa vuoi sapere?";
+            msgBox.innerHTML = "Le nostre suite partono da €220/notte. Cosa vuoi approfondire?";
             options.innerHTML = `
-                <button class="chat-btn" onclick="showL3Info()">📺 TV Sat e Minibar</button>
-                <button class="chat-btn" onclick="showL3Prezzi()">💰 Dettaglio Prezzi</button>
-                <button class="chat-btn" onclick="showL1()">⬅️ Indietro</button>`;
+                <button class="chat-btn" onclick="showL3Dotazioni()">📺 TV Sat e Minibar</button>
+                <button class="chat-btn" onclick="showL3Prezzi()">💰 Info Prenotazione</button>
+                <button class="chat-btn" onclick="showL1()" style="background:#eee; border-color:#ccc;">⬅️ Menu Principale</button>`;
         }
 
-        // LIVELLO 2: Dettagli Servizi
+        // LIVELLO 2: Dettaglio Servizi
         function showL2Servizi() {
-            msgBox.innerHTML = "Offriamo servizi specifici per sportivi e pet-owner:";
+            msgBox.innerHTML = "Siamo pronti per la tua vacanza active. Dettagli su:";
             options.innerHTML = `
-                <button class="chat-btn" onclick="showL3Sport()">🚲 Deposito Sport</button>
-                <button class="chat-btn" onclick="showL3Pet()">🐾 Info Animali</button>
-                <button class="chat-btn" onclick="showL1()">⬅️ Indietro</button>`;
+                <button class="chat-btn" onclick="showL3Sport()">🚲 Deposito Sportivo</button>
+                <button class="chat-btn" onclick="showL3Pet()">🐾 Animali Ammessi</button>
+                <button class="chat-btn" onclick="showL1()" style="background:#eee; border-color:#ccc;">⬅️ Menu Principale</button>`;
         }
 
-        // LIVELLO 3: Risposte Finali
-        function showL3Info() {
-            msgBox.innerHTML = "Tutte le suite includono <b>TV Satellitare</b>, <b>Minibar</b> e Wi-Fi veloce.";
-            options.innerHTML = `<button class="chat-btn" onclick="showL2Camere()">⬅️ Torna a Camere</button>`;
+        // LIVELLO 3: Risposte finali
+        function showL3Dotazioni() {
+            msgBox.innerHTML = "Ogni suite è dotata di <b>TV Satellitare</b> di ultima generazione e <b>Minibar</b> rifornito ogni giorno per il tuo relax.";
+            options.innerHTML = `<button class="chat-btn" onclick="showL2Camere()">⬅️ Torna a Suite</button>`;
         }
         function showL3Prezzi() {
-            msgBox.innerHTML = "Le tariffe partono da €220/notte e includono sempre la colazione gourmet vista lago.";
-            options.innerHTML = `<button class="chat-btn" onclick="showL2Camere()">⬅️ Torna a Camere</button>`;
+            msgBox.innerHTML = "La tariffa base è di €220/notte e include la nostra colazione gourmet. Prenotando ora garantisci la miglior vista!";
+            options.innerHTML = `<button class="chat-btn" onclick="showL2Camere()">⬅️ Torna a Suite</button>`;
         }
         function showL3Sport() {
-            msgBox.innerHTML = "Abbiamo un deposito videosorvegliato per bici e rimessaggio per windsurf/vela.";
+            msgBox.innerHTML = "Abbiamo un deposito videosorvegliato per bici e spazi dedicati per windsurf e vele. Tutto incluso!";
             options.innerHTML = `<button class="chat-btn" onclick="showL2Servizi()">⬅️ Torna a Servizi</button>`;
         }
         function showL3Pet() {
-            msgBox.innerHTML = "Accettiamo animali di piccola taglia. È richiesta la segnalazione alla prenotazione.";
+            msgBox.innerHTML = "Accettiamo con piacere <b>animali di piccola taglia</b>. Ti preghiamo di indicarci la loro presenza nelle note.";
             options.innerHTML = `<button class="chat-btn" onclick="showL2Servizi()">⬅️ Torna a Servizi</button>`;
         }
     </script>
+
     <style>
-        .chat-btn { background: white; border: 1px solid #e67e22; color: #2c3e50; padding: 10px; border-radius: 8px; cursor: pointer; text-align: left; transition: 0.2s; font-size: 0.85rem;}
-        .chat-btn:hover { background: #e67e22; color: white; }
+        .chat-btn { 
+            background: white; 
+            border: 1.5px solid #e67e22; 
+            color: #2c3e50; 
+            padding: 12px; 
+            border-radius: 10px; 
+            cursor: pointer; 
+            text-align: left; 
+            transition: 0.2s; 
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .chat-btn:hover { 
+            background: #e67e22; 
+            color: white; 
+            transform: translateX(5px);
+        }
+        #chat-bubble:hover {
+            transform: scale(1.1);
+        }
     </style>
 </body>
 </html>
