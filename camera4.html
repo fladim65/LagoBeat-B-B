@@ -3,29 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luxury Suite 4 - LagoBeat B&B</title>
+    <title>Luxury Infinity Suite - LagoBeat B&B</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <nav><a href="index.html">LAGOBEAT B&B</a><ul><li><a href="camere.html">Indietro</a></li></ul></nav>
+        <nav>
+            <a href="index.html" style="text-decoration:none; color:white; font-weight:bold;">LAGOBEAT B&B</a>
+            <ul>
+                <li><a href="camere.html">Indietro</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
     </header>
+
     <main class="container">
         <section class="card">
             <h1>Luxury Infinity Suite</h1>
-            <img src="images/camera4.jpg" alt="Suite 4" class="main-img">
+            
+            <img src="images/camera4.jpg" alt="Luxury Infinity Suite" class="main-img" style="width:100%; border-radius:15px; margin-bottom: 20px;">
+
+            <div style="text-align: left; padding: 0 10px;">
+                <h3>Il top del relax a Malcesine</h3>
+                <p>La nostra Suite più esclusiva. Arredi di pregio, ampie vetrate e una vista mozzafiato che sembra fondersi con le acque del Lago di Garda.</p>
+            </div>
+
+            <hr style="margin: 30px 0; border: 0; border-top: 1px solid #eee;">
+
             <div class="room-gallery">
                 <div class="gallery-item">
-                    <img src="images/camera4-bagno.jpg" alt="Bagno">
-                    <p>IL BAGNO SPA</p>
+                    <img src="images/camera4-bagno.jpg" alt="Bagno Suite 4">
+                    <p><b>SPA PRIVATA</b></p>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/camera4-vista.jpg" alt="Vista">
-                    <p>PISCINA PRIVATA</p>
+                    <img src="images/camera4-vista.jpg" alt="Vista Suite 4">
+                    <p><b>VISTA INFINITY</b></p>
                 </div>
             </div>
-            <a href="https://wa.me/393282124247" class="btn btn-whatsapp">Verifica Disponibilità</a>
+
+            <div style="margin-top: 40px;">
+                <a href="https://wa.me/393282124247" class="btn btn-whatsapp" style="padding: 15px 30px; font-size: 1.1rem;">Prenota Luxury Suite su WhatsApp</a>
+            </div>
         </section>
     </main>
+
+    <footer style="text-align: center; padding: 30px 0; color: #777;">
+        <p>&copy; 2026 LagoBeat B&B - Malcesine (VR)</p>
+    </footer>
+
+    <div id="chatbot-container" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; font-family: sans-serif;">
+        <div id="chat-window" style="width: 300px; background: white; border-radius: 15px; box-shadow: 0 5px 25px rgba(0,0,0,0.2); display: none; flex-direction: column; overflow: hidden; border: 1px solid #ddd;">
+            <div style="background: #2c3e50; color: white; padding: 15px; font-weight: bold; display: flex; justify-content: space-between;">
+                <span>LagoBeat Assistant</span>
+                <span style="cursor:pointer" onclick="toggleChat()">✖</span>
+            </div>
+            <div id="chat-body" style="padding: 15px; max-height: 350px; overflow-y: auto;">
+                <div id="chat-msg-box" style="margin-bottom: 15px; padding: 10px; border-radius: 10px; background: #f1f1f1; font-size: 0.9rem;">Ciao! Vuoi conoscere i dettagli della Suite 4?</div>
+                <div id="chat-options" style="display: flex; flex-direction: column; gap: 8px;"></div>
+            </div>
+        </div>
+        <div id="chat-bubble" onclick="toggleChat()" style="width: 60px; height: 60px; background: #e67e22; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+            <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" alt="Chat" style="width: 35px;">
+        </div>
+    </div>
+
+    <script>
+        const msgBox = document.getElementById('chat-msg-box');
+        const options = document.getElementById('chat-options');
+        const chatWin = document.getElementById('chat-window');
+
+        function toggleChat() { 
+            chatWin.style.display = chatWin.style.display === 'flex' ? 'none' : 'flex'; 
+            showMainMenu(); 
+        }
+
+        function showMainMenu() {
+            msgBox.innerHTML = "Benvenuto! Cosa desideri sapere sulla Luxury Suite?";
+            options.innerHTML = `
+                <button class="chat-btn-style" onclick="showPrezzi()">💰 Prezzi Luxury</button>
+                <button class="chat-btn-style" onclick="showParcheggio()">🚗 Parcheggio</button>
+                <button class="chat-btn-style" onclick="location.href='camere.html'">🛌 Vedi altre suite</button>
+                <button class="chat-btn-style" onclick="location.href='https://wa.me/393282124247'">💬 Prenota ora</button>`;
+        }
+
+        function showPrezzi() { 
+            msgBox.innerHTML = "La Luxury Infinity Suite parte da €220/notte inclusa la nostra colazione gourmet."; 
+            options.innerHTML = `<button class="chat-btn-style" onclick="showMainMenu()">⬅️ Indietro</button>`; 
+        }
+
+        function showParcheggio() { 
+            msgBox.innerHTML = "Il parcheggio privato è gratuito e riservato proprio sotto la struttura."; 
+            options.innerHTML = `<button class="chat-btn-style" onclick="showMainMenu()">⬅️ Indietro</button>`; 
+        }
+    </script>
+
+    <style>
+        .chat-btn-style { background: white; border: 1px solid #e67e22; color: #2c3e50; padding: 10px; border-radius: 8px; cursor: pointer; text-align: left; transition: 0.2s; font-size: 0.9rem; }
+        .chat-btn-style:hover { background: #e67e22; color: white; }
+    </style>
 </body>
 </html>
