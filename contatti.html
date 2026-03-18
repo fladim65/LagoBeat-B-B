@@ -7,78 +7,20 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html" style="text-decoration:none; color:white; font-weight:bold;">LAGOBEAT B&B</a>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="camere.html">Camere</a></li>
-                <li><a href="servizi.html">Servizi</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header><nav><a href="index.html" style="color:white; text-decoration:none; font-weight:bold;">LAGOBEAT B&B</a><ul><li><a href="index.html">Home</a></li></ul></nav></header>
 
-    <main class="container">
-        <section class="card">
-            <h1>Contattaci</h1>
-            <p>Siamo a tua disposizione per ogni informazione.</p>
-            
-            <div style="display: flex; flex-wrap: wrap; gap: 40px; margin-top: 30px; text-align: left;">
-                <div style="flex: 1; min-width: 250px;">
-                    <h3>Info Rapide</h3>
-                    <p>📍 Via del Lago, 12 - Malcesine (VR)</p>
-                    <p>📞 +39 328 212 4247</p>
-                    <p>📧 info@lagobeat.it</p>
-                    <br>
-                    <a href="https://wa.me/393282124247" class="btn btn-whatsapp">Chatta su WhatsApp</a>
-                </div>
-                <div style="flex: 1.5; min-width: 300px;">
-                    <form action="mailto:info@lagobeat.it" method="post" enctype="text/plain" style="display: flex; flex-direction: column; gap: 10px;">
-                        <input type="text" name="nome" placeholder="Il tuo Nome" required style="padding: 10px; border-radius: 5px; border: 1px solid #ddd;">
-                        <input type="email" name="email" placeholder="La tua Email" required style="padding: 10px; border-radius: 5px; border: 1px solid #ddd;">
-                        <textarea name="messaggio" rows="4" placeholder="Messaggio" required style="padding: 10px; border-radius: 5px; border: 1px solid #ddd;"></textarea>
-                        <button type="submit" class="btn" style="background: #2c3e50; color: white; border: none; cursor: pointer;">Invia Messaggio</button>
-                    </form>
-                </div>
+    <main class="container" style="max-width: 800px; margin: auto; padding: 20px;">
+        <h1 style="text-align: center;">Siamo a tua disposizione</h1>
+        <div class="card" style="padding: 40px; text-align: left; line-height: 2;">
+            <p>📍 <b>Dove siamo:</b> Via del Lago, 12 - 37018 Malcesine (VR)</p>
+            <p>📞 <b>WhatsApp / Mobile:</b> +39 328 212 4247</p>
+            <p>📧 <b>Email:</b> info@lagobeat.it</p>
+            <p>🐾 <b>Animali:</b> Benvenuti quelli di piccola taglia!</p>
+            <div style="margin-top:30px; text-align:center;">
+                <a href="https://wa.me/393282124247" class="btn" style="background:#2c3e50; color:white; padding:15px 30px; text-decoration:none; border-radius:5px; font-weight:bold;">SCRIVICI SU WHATSAPP</a>
             </div>
-        </section>
+        </div>
     </main>
 
-    <div id="chatbot-container" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; font-family: sans-serif;">
-        <div id="chat-window" style="width: 300px; background: white; border-radius: 15px; box-shadow: 0 5px 25px rgba(0,0,0,0.2); display: none; flex-direction: column; overflow: hidden; border: 1px solid #ddd;">
-            <div style="background: #2c3e50; color: white; padding: 15px; font-weight: bold; display: flex; justify-content: space-between;">
-                <span>LagoBeat Assistant</span>
-                <span style="cursor:pointer" onclick="toggleChat()">✖</span>
-            </div>
-            <div id="chat-body" style="padding: 15px; max-height: 350px; overflow-y: auto;">
-                <div id="chat-msg-box" style="margin-bottom: 15px; padding: 10px; border-radius: 10px; background: #f1f1f1; font-size: 0.9rem;">Hai bisogno di aiuto per trovarci o per prenotare?</div>
-                <div id="chat-options" style="display: flex; flex-direction: column; gap: 8px;"></div>
-            </div>
-        </div>
-        <div id="chat-bubble" onclick="toggleChat()" style="width: 60px; height: 60px; background: #e67e22; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-            <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" alt="Chat" style="width: 35px;">
-        </div>
-    </div>
-
-    <script>
-        const msgBox = document.getElementById('chat-msg-box');
-        const options = document.getElementById('chat-options');
-        const chatWin = document.getElementById('chat-window');
-        function toggleChat() { chatWin.style.display = chatWin.style.display === 'flex' ? 'none' : 'flex'; showMainMenu(); }
-        function showMainMenu() {
-            msgBox.innerHTML = "Come posso aiutarti?";
-            options.innerHTML = `
-                <button class="chat-btn-style" onclick="showPosizione()">📍 Dove siamo esattamente?</button>
-                <button class="chat-btn-style" onclick="showCheckin()">🔑 Orari Check-in</button>
-                <button class="chat-btn-style" onclick="location.href='https://wa.me/393282124247'">💬 Scrivici su WhatsApp</button>
-                <button class="chat-btn-style" onclick="location.href='index.html'">🏠 Torna alla Home</button>`;
-        }
-        function showPosizione() { msgBox.innerHTML = "Siamo in Via del Lago 12, a 500 metri dal castello di Malcesine. Parcheggio incluso!"; options.innerHTML = `<button class="chat-btn-style" onclick="showMainMenu()">⬅️ Indietro</button>`; }
-        function showCheckin() { msgBox.innerHTML = "Il check-in è dalle 14:00 alle 19:00. Per arrivi tardivi, avvisaci su WhatsApp!"; options.innerHTML = `<button class="chat-btn-style" onclick="showMainMenu()">⬅️ Indietro</button>`; }
-    </script>
-    <style>
-        .chat-btn-style { background: white; border: 1px solid #e67e22; color: #2c3e50; padding: 10px; border-radius: 8px; cursor: pointer; text-align: left; transition: 0.2s; font-size: 0.9rem;}
-        .chat-btn-style:hover { background: #e67e22; color: white; }
-    </style>
-</body>
+    </body>
 </html>
