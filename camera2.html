@@ -7,69 +7,18 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html" style="text-decoration:none; color:white; font-weight:bold;">LAGOBEAT B&B</a>
-            <ul>
-                <li><a href="camere.html">Indietro</a></li>
-                <li><a href="contatti.html">Contatti</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header><nav><a href="index.html" style="color:white; text-decoration:none; font-weight:bold;">LAGOBEAT B&B</a><ul><li><a href="camere.html">Indietro</a></li></ul></nav></header>
 
     <main class="container">
-        <section class="card">
+        <section class="card" style="padding:20px;">
             <h1>Suite Deluxe 2</h1>
-            <img src="images/camera2.jpg" alt="Suite 2" class="main-img" style="width:100%; border-radius:15px;">
-            
-            <div style="text-align: left; padding: 20px 0;">
-                <h3>Design e Relax</h3>
-                <p>La Suite 2 offre un ambiente moderno, perfetto per chi cerca tranquillità dopo una giornata di sport sul lago.</p>
-            </div>
-
-            <div class="room-gallery">
-                <div class="gallery-item"><img src="images/camera2-bagno.jpg"><p>BAGNO</p></div>
-                <div class="gallery-item"><img src="images/camera2-vista.jpg"><p>VISTA</p></div>
-            </div>
-            
-            <a href="https://wa.me/393282124247" class="btn btn-whatsapp" style="margin-top:20px;">Prenota Suite 2 su WhatsApp</a>
+            <img src="images/camera2.jpg" alt="Suite 2" class="main-img" style="width:100%; border-radius:15px; margin-bottom:20px;">
+            <p>La Suite 2 offre ampi spazi e arredi eleganti. Include <b>TV Satellitare</b>, <b>Minibar</b> e connessione Wi-Fi Fibra.</p>
+            <p>Prezzo: da <b>€220/notte</b> (colazione gourmet inclusa).</p>
+            <br>
+            <a href="https://wa.me/393282124247" class="btn" style="background:#25d366; color:white; padding:15px; text-decoration:none; border-radius:10px; font-weight:bold; display:inline-block;">Prenota Suite 2 su WhatsApp</a>
         </section>
     </main>
 
-    <div id="chatbot-container" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; font-family: sans-serif;">
-        <div id="chat-window" style="width: 300px; background: white; border-radius: 15px; box-shadow: 0 5px 25px rgba(0,0,0,0.2); display: none; flex-direction: column; overflow: hidden; border: 1px solid #ddd;">
-            <div style="background: #2c3e50; color: white; padding: 15px; font-weight: bold; display: flex; justify-content: space-between;">
-                <span>LagoBeat Assistant</span>
-                <span style="cursor:pointer" onclick="toggleChat()">✖</span>
-            </div>
-            <div id="chat-body" style="padding: 15px; max-height: 350px; overflow-y: auto;">
-                <div id="chat-msg-box" style="margin-bottom: 15px; padding: 10px; border-radius: 10px; background: #f1f1f1; font-size: 0.9rem;">Ciao! Come posso aiutarti?</div>
-                <div id="chat-options" style="display: flex; flex-direction: column; gap: 8px;"></div>
-            </div>
-        </div>
-        <div id="chat-bubble" onclick="toggleChat()" style="width: 60px; height: 60px; background: #e67e22; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-            <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" alt="Chat" style="width: 35px;">
-        </div>
-    </div>
-    <script>
-        const msgBox = document.getElementById('chat-msg-box');
-        const options = document.getElementById('chat-options');
-        const chatWin = document.getElementById('chat-window');
-        function toggleChat() { chatWin.style.display = chatWin.style.display === 'flex' ? 'none' : 'flex'; showMainMenu(); }
-        function showMainMenu() {
-            msgBox.innerHTML = "Benvenuto! Cosa desideri sapere?";
-            options.innerHTML = `
-                <button class="chat-btn-style" onclick="showPrezzi()">💰 Prezzi</button>
-                <button class="chat-btn-style" onclick="showParcheggio()">🚗 Parcheggio</button>
-                <button class="chat-btn-style" onclick="location.href='camere.html'">🛌 Altre Suite</button>
-                <button class="chat-btn-style" onclick="location.href='https://wa.me/393282124247'">💬 WhatsApp</button>`;
-        }
-        function showPrezzi() { msgBox.innerHTML = "Tariffe da €150/notte. Colazione inclusa."; options.innerHTML = `<button class="chat-btn-style" onclick="showMainMenu()">⬅️ Indietro</button>`; }
-        function showParcheggio() { msgBox.innerHTML = "Parcheggio privato gratuito per gli ospiti."; options.innerHTML = `<button class="chat-btn-style" onclick="showMainMenu()">⬅️ Indietro</button>`; }
-    </script>
-    <style>
-        .chat-btn-style { background: white; border: 1px solid #e67e22; color: #2c3e50; padding: 10px; border-radius: 8px; cursor: pointer; text-align: left; transition: 0.2s; }
-        .chat-btn-style:hover { background: #e67e22; color: white; }
-    </style>
-</body>
+    </body>
 </html>
