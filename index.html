@@ -66,96 +66,59 @@
         const options = document.getElementById('chat-options');
         const chatWin = document.getElementById('chat-window');
 
-        function toggleChat() { chatWin.style.display = chatWin.style.display === 'flex' ? 'none' : 'flex'; showL1(); }
+        function toggleChat() { 
+            chatWin.style.display = chatWin.style.display === 'flex' ? 'none' : 'flex'; 
+            if(chatWin.style.display === 'flex') showL1(); 
+        }
 
+        // LIVELLO 1: Menu Principale
         function showL1() {
-            msgBox.innerHTML = "Benvenuto al LagoBeat B&B! Seleziona un'area di interesse:";
+            msgBox.innerHTML = "Benvenuto! Seleziona un'opzione:";
             options.innerHTML = `
                 <button class="chat-btn" onclick="showL2Camere()">🛌 Camere e Prezzi</button>
-                <button class="chat-btn" onclick="showL2Servizi()">🚲 Sport e Servizi</button>
-                <button class="chat-btn" onclick="location.href='https://wa.me/393282124247'">💬 WhatsApp</button>`;
+                <button class="chat-btn" onclick="showL2Servizi()">🚲 Sport e Animali</button>
+                <button class="chat-btn" onclick="location.href='https://wa.me/393282124247'">💬 Parla con noi</button>`;
         }
 
+        // LIVELLO 2: Dettagli Camere
         function showL2Camere() {
-            msgBox.innerHTML = "Le nostre Suite partono da €220/notte. Cosa vuoi approfondire?";
+            msgBox.innerHTML = "Suite da €220/notte. Cosa vuoi sapere?";
             options.innerHTML = `
                 <button class="chat-btn" onclick="showL3Info()">📺 TV Sat e Minibar</button>
-                <button class="chat-btn" onclick="showL3Pet()">🐾 Animali Ammessi</button>
-                <button class="chat-btn" onclick="showL1()">⬅️ Torna al Menu</button>`;
+                <button class="chat-btn" onclick="showL3Prezzi()">💰 Dettaglio Prezzi</button>
+                <button class="chat-btn" onclick="showL1()">⬅️ Indietro</button>`;
         }
 
+        // LIVELLO 2: Dettagli Servizi
         function showL2Servizi() {
-            msgBox.innerHTML = "Siamo pronti per la tua avventura!";
+            msgBox.innerHTML = "Offriamo servizi specifici per sportivi e pet-owner:";
             options.innerHTML = `
-                <button class="chat-btn" onclick="showL3Sport()">🚲 Bici e Windsurf</button>
-                <button class="chat-btn" onclick="location.href='colazioni.html'">🥐 Colazione</button>
-                <button class="chat-btn" onclick="showL1()">⬅️ Torna al Menu</button>`;
+                <button class="chat-btn" onclick="showL3Sport()">🚲 Deposito Sport</button>
+                <button class="chat-btn" onclick="showL3Pet()">🐾 Info Animali</button>
+                <button class="chat-btn" onclick="showL1()">⬅️ Indietro</button>`;
         }
 
+        // LIVELLO 3: Risposte Finali
         function showL3Info() {
-            msgBox.innerHTML = "Tutte le camere offrono <b>TV Satellitare</b> e <b>Minibar</b> rifornito ogni giorno.";
-            options.innerHTML = `<button class="chat-btn" onclick="showL2Camere()">⬅️ Indietro</button>`;
+            msgBox.innerHTML = "Tutte le suite includono <b>TV Satellitare</b>, <b>Minibar</b> e Wi-Fi veloce.";
+            options.innerHTML = `<button class="chat-btn" onclick="showL2Camere()">⬅️ Torna a Camere</button>`;
         }
-
-        function showL3Pet() {
-            msgBox.innerHTML = "Accettiamo <b>animali di piccola taglia</b>. Segnalalo nella tua richiesta!";
-            options.innerHTML = `<button class="chat-btn" onclick="showL2Camere()">⬅️ Indietro</button>`;
+        function showL3Prezzi() {
+            msgBox.innerHTML = "Le tariffe partono da €220/notte e includono sempre la colazione gourmet vista lago.";
+            options.innerHTML = `<button class="chat-btn" onclick="showL2Camere()">⬅️ Torna a Camere</button>`;
         }
-
         function showL3Sport() {
             msgBox.innerHTML = "Abbiamo un deposito videosorvegliato per bici e rimessaggio per windsurf/vela.";
-            options.innerHTML = `<button class="chat-btn" onclick="showL2Servizi()">⬅️ Indietro</button>`;
+            options.innerHTML = `<button class="chat-btn" onclick="showL2Servizi()">⬅️ Torna a Servizi</button>`;
+        }
+        function showL3Pet() {
+            msgBox.innerHTML = "Accettiamo animali di piccola taglia. È richiesta la segnalazione alla prenotazione.";
+            options.innerHTML = `<button class="chat-btn" onclick="showL2Servizi()">⬅️ Torna a Servizi</button>`;
         }
     </script>
     <style>
         .chat-btn { background: white; border: 1px solid #e67e22; color: #2c3e50; padding: 10px; border-radius: 8px; cursor: pointer; text-align: left; transition: 0.2s; font-size: 0.85rem;}
         .chat-btn:hover { background: #e67e22; color: white; }
     </style>
-<div id="chatbot-container" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; font-family: sans-serif;">
-    <div id="chat-window" style="width: 320px; background: white; border-radius: 15px; box-shadow: 0 5px 25px rgba(0,0,0,0.2); display: none; flex-direction: column; overflow: hidden; border: 1px solid #ddd;">
-        <div style="background: #2c3e50; color: white; padding: 15px; font-weight: bold; display: flex; justify-content: space-between;">
-            <span>LagoBeat Assistant</span>
-            <span style="cursor:pointer" onclick="toggleChat()">✖</span>
-        </div>
-        <div id="chat-body" style="padding: 15px; max-height: 400px; overflow-y: auto;">
-            <div id="chat-msg-box" style="margin-bottom: 15px; padding: 10px; border-radius: 10px; background: #f1f1f1; font-size: 0.9rem;">Ciao! Come posso aiutarti oggi?</div>
-            <div id="chat-options" style="display: flex; flex-direction: column; gap: 8px;"></div>
-        </div>
-    </div>
-    <div id="chat-bubble" onclick="toggleChat()" style="width: 60px; height: 60px; background: #e67e22; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" alt="Chat" style="width: 35px;">
-    </div>
-</div>
-
-<script>
-    const msgBox = document.getElementById('chat-msg-box'); const options = document.getElementById('chat-options'); const chatWin = document.getElementById('chat-window');
-    function toggleChat() { chatWin.style.display = chatWin.style.display === 'flex' ? 'none' : 'flex'; showL1(); }
-    
-    // Livello 1
-    function showL1() { 
-        msgBox.innerHTML = "Cosa desideri sapere?"; 
-        options.innerHTML = `<button class="chat-btn" onclick="showL2Camere()">🛌 Camere e Prezzi</button><button class="chat-btn" onclick="showL2Servizi()">🚲 Sport e Servizi</button><button class="chat-btn" onclick="location.href='https://wa.me/393282124247'">💬 WhatsApp</button>`; 
-    }
-    
-    // Livello 2
-    function showL2Camere() { 
-        msgBox.innerHTML = "Le nostre Suite partono da €220/notte. Dettagli su:"; 
-        options.innerHTML = `<button class="chat-btn" onclick="showL3Info()">📺 TV Sat e Minibar</button><button class="chat-btn" onclick="showL3Pet()">🐾 Animali</button><button class="chat-btn" onclick="showL1()">⬅️ Indietro</button>`; 
-    }
-    function showL2Servizi() { 
-        msgBox.innerHTML = "Siamo pronti per la tua avventura! Cosa ti interessa?"; 
-        options.innerHTML = `<button class="chat-btn" onclick="showL3Sport()">🚲 Bici e Windsurf</button><button class="chat-btn" onclick="location.href='colazioni.html'">🥐 Colazione Gourmet</button><button class="chat-btn" onclick="showL1()">⬅️ Indietro</button>`; 
-    }
-
-    // Livello 3
-    function showL3Info() { msgBox.innerHTML = "Tutte le suite hanno <b>TV Satellitare</b> e <b>Minibar</b> rifornito ogni giorno."; options.innerHTML = `<button class="chat-btn" onclick="showL2Camere()">⬅️ Torna a Camere</button>`; }
-    function showL3Pet() { msgBox.innerHTML = "Accettiamo <b>animali di piccola taglia</b>. Segnalalo nella prenotazione!"; options.innerHTML = `<button class="chat-btn" onclick="showL2Camere()">⬅️ Torna a Camere</button>`; }
-    function showL3Sport() { msgBox.innerHTML = "Deposito bici sicuro videosorvegliato e rimessaggio windsurf/vela incluso."; options.innerHTML = `<button class="chat-btn" onclick="showL2Servizi()">⬅️ Torna a Servizi</button>`; }
-</script>
-
-<style>
-    .chat-btn { background: white; border: 1px solid #e67e22; color: #2c3e50; padding: 10px; border-radius: 8px; cursor: pointer; text-align: left; transition: 0.2s; font-size: 0.85rem;}
-    .chat-btn:hover { background: #e67e22; color: white; }
-</style>
 </body>
 </html>
