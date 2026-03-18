@@ -2,23 +2,33 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>Suite - LagoBeat B&B</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le nostre Suite - LagoBeat B&B</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header><nav><a href="index.html">LAGOBEAT B&B</a><ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="trasporti.html">Trasporti</a></li>
-        <li><a href="contatti.html">Contatti</a></li>
-    </ul></nav></header>
-    <main class="container" style="padding:40px 5%;">
-        <h1 style="text-align:center;">Le nostre Suite (da €220/notte)</h1>
-        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:20px;">
-            <div class="card"><img src="images/camera1.jpg" style="width:100%;"><a href="camera1.html" class="btn">Suite 1</a></div>
-            <div class="card"><img src="images/camera2.jpg" style="width:100%;"><a href="camera2.html" class="btn">Suite 2</a></div>
-            <div class="card"><img src="images/camera3.jpg" style="width:100%;"><a href="camera3.html" class="btn">Suite 3</a></div>
-            <div class="card"><img src="images/camera4.jpg" style="width:100%;"><a href="camera4.html" class="btn">Suite 4</a></div>
+    <header>
+        <nav>
+            <a href="index.html" style="color:white; text-decoration:none; font-weight:bold; font-size:1.5rem;">LAGOBEAT B&B</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servizi.html">Servizi</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 style="margin: 30px 0; text-align: center;">Scegli la tua Suite</h1>
+        <p style="text-align: center;">Tutte le nostre camere offrono TV Satellitare, Minibar e Wi-Fi Fibra. Da €220/notte.</p>
+        
+        <div class="grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; padding: 20px;">
+            <div class="card"><img src="images/camera1.jpg" alt="Suite 1" style="width:100%; border-radius:10px;"><h3>Suite Deluxe 1</h3><a href="camera1.html" class="btn">Dettagli</a></div>
+            <div class="card"><img src="images/camera2.jpg" alt="Suite 2" style="width:100%; border-radius:10px;"><h3>Suite Deluxe 2</h3><a href="camera2.html" class="btn">Dettagli</a></div>
+            <div class="card"><img src="images/camera3.jpg" alt="Suite 3" style="width:100%; border-radius:10px;"><h3>Suite Deluxe 3</h3><a href="camera3.html" class="btn">Dettagli</a></div>
+            <div class="card"><img src="images/camera4.jpg" alt="Suite 4" style="width:100%; border-radius:10px;"><h3>Luxury Infinity</h3><a href="camera4.html" class="btn">Dettagli</a></div>
         </div>
     </main>
+
     </body>
 </html>
